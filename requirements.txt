@@ -1,0 +1,9 @@
+# Core
+mcp
+requests
+python-dotenv
+msal
+
+# Browser fallback only (AUTH_METHOD=browser). Install separately if needed:
+#   pip install playwright && playwright install chromium
+# playwright
