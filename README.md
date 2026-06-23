@@ -101,6 +101,28 @@ Example (VS Code / Claude `mcp.json`-style config):
 }
 ```
 
+## Use with Claude
+
+Once setup and sign-in are done, the simplest way is the Claude Code CLI.
+Register the server in one command (use absolute paths):
+
+```bash
+claude mcp add planner /absolute/path/to/.venv/bin/python /absolute/path/to/planner_mcp_server.py
+```
+
+That's it. Start `claude` and just ask in plain language, for example:
+
+- "What are my Planner tasks?"
+- "Show me the details of my in-progress tasks."
+- "Mark *Write the report* as completed."
+
+Claude calls the tools for you. Run `claude mcp list` to confirm it's connected,
+or `/mcp` inside Claude Code to see its status.
+
+For the **Claude desktop app**, add the same `mcpServers` block shown above to
+your `claude_desktop_config.json` (Settings, then **Developer**, then **Edit
+Config**) and restart the app.
+
 ## Configuration reference
 
 | Variable | Default | Notes |
