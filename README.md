@@ -63,7 +63,7 @@ MSAL caches a refresh token and the server refreshes access tokens silently.
 > When you can, use Method 1 instead.
 
 ```bash
-pip install playwright && playwright install chromium
+pip install playwright && playwright install chromium chromium-headless-shell
 # fetch the MSAL.js library used inside the browser:
 mkdir -p vendor && curl -fsSL -o vendor/msal-browser.min.js \
   https://cdn.jsdelivr.net/npm/@azure/msal-browser@2.38.4/lib/msal-browser.min.js
